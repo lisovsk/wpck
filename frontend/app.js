@@ -52,6 +52,11 @@
 //     })
 // }
 
-let lod =  require('lodash')
-console.log(lod);
-console.log(_);
+// let lod =  require('lodash')
+// console.log(lod);
+// console.log(_);
+// console.log(lodashPr); 
+
+import angular from 'angular'
+
+export default angular

@@ -44,6 +44,9 @@ module.exports = {
       name: "commons",
       filename: "commons.js",
       chanks: ["home", "name"]
+    }),
+    new webpack.ProvidePlugin({
+      lodashPr: 'lodash'
     })
   ],
 
@@ -63,12 +66,15 @@ module.exports = {
         {
             test: /\.jsx?$/,
             loader: 'babel-loader',
+            include:  __dirname + '/frontend',
             options: {
               // presets: ['env'],
               // plugins: ['transform-runtime']
-            }
+            },
+            exclude: /\/node_modules\//
         }
-    ]
+    ],
+    noParse: /angular\/angular.js/ 
   }
 };
 
