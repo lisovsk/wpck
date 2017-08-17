@@ -151,34 +151,33 @@ var commons =
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 eval("Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (message) {\n\n  if (true) {\n    console.log(message);\n  }\n\n  alert(\"ru\");\n  alert(`Welcome ${message}`);\n});;//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9mcm9udGVuZC93ZWxjb21lLmpzPzgyNzgiXSwic291cmNlc0NvbnRlbnQiOlsiXG4ndXNlIHN0cmljdCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uKG1lc3NhZ2UpIHtcblxuICBpZiAoTk9ERV9FTlYgPT0gJ2RldmVsb3BtZW50Jykge1xuICAgIGNvbnNvbGUubG9nKG1lc3NhZ2UpO1xuICB9XG5cbiAgYWxlcnQoTEFORyk7XG4gIGFsZXJ0KGBXZWxjb21lICR7bWVzc2FnZX1gKTtcbn07XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIGZyb250ZW5kL3dlbGNvbWUuanMiXSwibWFwcGluZ3MiOiI7O0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==");
 
 /***/ }),
-/* 1 */,
-/* 2 */,
-/* 3 */
-/***/ (function(module, exports) {
 
-eval("// alert(\"sadasda\");//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9mcm9udGVuZC9jb21tb25zLmpzPzMwM2MiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gYWxlcnQoXCJzYWRhc2RhXCIpO1xuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBmcm9udGVuZC9jb21tb25zLmpzIl0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==");
-
-/***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */
+/***/ 10:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(0);
-module.exports = __webpack_require__(3);
+module.exports = __webpack_require__(4);
 
+
+/***/ }),
+
+/***/ 4:
+/***/ (function(module, exports) {
+
+eval("// alert(\"sadasda\");//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9mcm9udGVuZC9jb21tb25zLmpzPzMwM2MiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gYWxlcnQoXCJzYWRhc2RhXCIpO1xuXG5cbi8vIFdFQlBBQ0sgRk9PVEVSIC8vXG4vLyBmcm9udGVuZC9jb21tb25zLmpzIl0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==");
 
 /***/ })
-/******/ ]);
+
+/******/ });
