@@ -38,16 +38,20 @@
 //     route();
 // }
 
-let moduleName = 'about';
-let handler;
-try {
-    handler = require('bundle-loader!./routes/' + moduleName);
-} catch(e) {
-    alert('no such path')
-}
+// let moduleName = 'about';
+// let handler;
+// try {
+//     handler = require('bundle-loader!./routes/' + moduleName);
+// } catch(e) {
+//     alert('no such path')
+// }
 
-if(handler) {
-    handler(function(route) {
-        route();
-    })
-}
+// if(handler) {
+//     handler(function(route) {
+//         route();
+//     })
+// }
+
+let lod =  require('lodash')
+console.log(lod);
+console.log(_);

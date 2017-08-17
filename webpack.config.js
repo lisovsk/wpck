@@ -22,6 +22,10 @@ module.exports = {
     library:  "[name]"
   },
 
+  externals: {
+    lodash: '_'
+  },
+
   watch: NODE_ENV == 'development',
 
   watchOptions: {
