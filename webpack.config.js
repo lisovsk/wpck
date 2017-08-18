@@ -2,12 +2,14 @@
  
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   context: __dirname + '/frontend',
 
   entry: {
     home: "./home",
+    main: "./main",
     about: "./about",
     app: "./app",
     login: "./login",
@@ -47,7 +49,8 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       lodashPr: 'lodash'
-    })
+    }),
+    new ExtractTextPlugin('styles.css')
   ],
 
   resolve: {
@@ -72,7 +75,25 @@ module.exports = {
               // plugins: ['transform-runtime']
             },
             exclude: /\/node_modules\//
+        },
+        {
+          test: /\.jade$/,
+          loader: "jade-loader",
+          include:  __dirname + '/frontend/menu'
+        },
+        {
+          test: /\.css$/,
+          include:  __dirname + '/frontend/menu',
+          use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: "css-loader"
+          })
+        },
+        {
+          test: /\.(png|jpg|gif|svg)$/,
+          loader: 'file-loader?name=[path][name].[ext]'
         }
+
     ],
     noParse: /angular\/angular.js/ 
   }
